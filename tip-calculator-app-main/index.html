@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+         
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+</head>
+<body>
+  <div id="logo"><img src="images/logo.svg" alt="" ></div>
+  <div id="container"><!--Inicio container-->
+  
+    <div id="box"><!--Inicio Caixa branca-->
+      <div id="box2">
+        <span id="cnt1" style="margin-right: 28px; display: none; color: red; font-size: 12px; float: right;">Cant'n be zero</span>
+        <p class="titleb1">Bill</p>
+        <input type="number" id="conta" placeholder="0">
+        <p class="titleb1">Select Tip %</p>
+        <div style="margin: 0 0 30px 10px;"> 
+          <button id="btn1">5%</button> 
+          <button id="btn2">10%</button> 
+          <button id="btn3">15%</button> 
+          <button id="btn4">25%</button> 
+          <button id="btn5">50%</button> 
+          <input type="number" id="custom" placeholder="Custom">
+        </div> 
+        <span id="cnt2" style="margin-right: 28px;display: none; color: red; font-size: 12px; float: right;">Cant'n be zero</span>
+        <p class="titleb1">Number of People</p>
+        <input type="number" id="pessoas" placeholder="0">
+      </div>
+
+      <div id="box3"><!--Inicio Caixa verde--> 
+
+        <div style="margin: 40px 0 0 30px;">
+          <p class="titleb2">Tip Amount</p>
+
+          <p class="titleb3">/ person</p>
+        </div>
+          <h1 id="display1">$0.00</h1>
+
+          <div style="margin-left: 30px;">
+          <p class="titleb2">Total </p> 
+          
+          <p class="titleb3">/ person</p>
+        </div>
+        <h1 id="display2">$0.00</h1>
+
+        <button id="reset">Reset</button> 
+      </div><!--Fim Caixa verde--> 
+    </div><!--Fim Caixa branca-->
+  </div><!--Fim container-->  
+  <script src="script.js"></script>
+</body>
+</html>
